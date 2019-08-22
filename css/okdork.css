@@ -1,0 +1,385 @@
+@import url(fontello.css);
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: auto;
+	font-family: 'Lato', sans-serif;
+	background-image: url(../imagenes/taco.png);
+	background-color: #f1f4f5;
+	background-repeat: repeat repeat;
+
+}
+header{
+	width: 100%;
+	height: auto;
+	position: relative;
+	
+}
+#logo{
+	width: 25%;
+	height: 110px;
+	position: absolute;
+	top: 15%;
+	left: 6%;
+}
+main{
+	width: 100%;
+	height: auto;
+	padding-top: 25%;
+}
+main #promo h1{
+	width: 90%;
+	height: auto;
+	margin: auto;
+	font-size: 35px;
+	line-height: 1.4em;
+	text-align: center;
+	font-weight: 520;
+	color: #212121;
+	padding-bottom: 10%;
+	padding-top: 4%;
+}
+form{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+form #correo{
+	width: 90%;
+	height: 55px;
+	margin: auto;
+	margin-bottom: 2%;
+	font-size: 20px;
+	font-weight:lighter;
+	padding-left: 2%;
+	color:#f1f4f5;
+}
+form #boton{
+	width: 50%;
+	height: 55px;
+	margin: auto;
+	margin-bottom: 13%;
+	background: #2bbd3e;
+	color: white;
+	border: none;
+	box-shadow: 5px 5px #16891e;
+	font-size: 20px;
+}
+#descripcion{
+	width: 100%;
+	height: auto;
+}
+#descripcion p{
+	width: 90%;
+	height: auto;
+	margin: auto;
+	line-height: 1.9rem;
+	font-size: 20px;
+	font-weight: lighter;
+	text-align: center;
+	padding-bottom: 10%;
+}
+#foto{
+	width: 100%;
+	height: auto;
+}
+#foto img{
+	width: 80%;
+	display: block;
+	height: auto;
+	margin: auto;
+}
+section{
+	width: 100%;
+	height: auto;
+	background:white;
+	position: relative;
+	font-family: 'Lato', sans-serif;
+}
+section #comentarios{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	padding-top: 20%;
+	text-align: center;
+}
+
+section #comentarios h2{
+	font-size: 16px;
+	padding-bottom: 5%
+}
+section #comentarios p{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	font-size: 16px;
+	font-weight: 100;
+	font-style: italic;
+	line-height: 1.7rem;
+	padding-bottom: 5%; 
+	color: #5b5b5b;
+}
+section #comentarios p:before{
+	position: absolute;
+	content:"\201c"; 
+	font-size: 7.5rem;
+	color: #cacaca;
+	font-style: italic;
+	top: 37%;
+	left: 6%;
+
+}
+
+section #comentarios address{
+	font-size: 14px;
+}
+
+footer{
+	background-color: white;
+	width: 100%;
+	height: 140px;
+	position: relative;
+
+}
+
+footer a{
+	color: #2bbd3e;
+	width: 40%;
+	height: 20%;
+	font-size: 18px;
+	position: absolute;
+	top: 35%;
+	left: 35%;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
+}
+footer i{
+	position: absolute;
+	margin: auto;
+	top: 36%;
+	left: 66%;
+}
+address{
+	font-style: normal;
+}
+
+/*-----------RESPONSIVE--------*/
+
+@media (min-width:768px){
+	#logo{
+		width: 12%;
+		height: 60px;
+		margin-top: 2.5%;
+		margin-left: -3%;
+	}
+	main #promo h1{
+		width: 60%;
+		height: auto;
+		margin: -15% 0 0 2%;
+		text-align: left;
+		font-weight: bold;
+		font-size: 36px;
+	}
+	form{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+	}	
+	form #correo{
+		width: 40%;
+		height: 55px;
+		margin: -8% 0 0 2%;
+		font-size: 20px;
+		color: black;
+	}
+	form #boton{
+		width: 23%;
+		height: 55px;
+		margin: -8% 0 0 1%;
+		background: #2bbd3e;
+		color: white;
+		border: none;
+		box-shadow: 5px 5px #16891e;
+		font-size: 20px;
+	}
+	#descripcion{
+		width: 80%;
+		height: auto;
+		margin: 1% 0 0 -8%;
+	}
+
+	#descripcion p{
+		width: 80%;
+		height: auto;
+		margin: auto;
+		padding-bottom: 2%;
+		font-size: 16px;
+		font-weight: 100;
+		line-height: 1.7rem;
+	}
+	#foto img{
+		width: 240px;
+		height: auto;
+		position: absolute;
+		top: 5%;
+		left: 67%;
+	}
+	section #comentarios{
+		width: 70%;
+		height: auto;
+		margin: auto;
+		padding-top: 10%;
+		text-align: center;
+	}	
+
+	section #comentarios h2{
+		font-size: 14px;
+		padding-bottom: 5%
+	}
+	section #comentarios p{
+		width: 60%;
+		height: auto;
+		margin: auto;
+		font-size: 22px;
+		font-weight: 100;
+		font-style: italic;
+		line-height: 1.7rem;
+		padding-bottom: 5%; 
+		color: #5b5b5b;
+	}
+	section #comentarios p:before{
+		margin-left: 15%;
+		margin-top: 5%;
+	}
+	footer a{
+		position: absolute;
+		top: 35%;
+		left: 42%;
+		right: 0;
+		bottom: 0;
+		cursor: pointer;
+	}
+	footer i{
+		position: absolute;
+		margin: auto;
+		top: 36%;
+		left: 57%;
+	}	
+}
+
+/* ------------RESPONSIVE 1024------>*/
+
+@media (min-width: 1024px){
+	#logo{
+		width: 12%;
+		height: 23px;
+		margin-top: 3.5%;
+		margin-left: -6%;
+	}
+	main #promo h1{
+		width: 40%;
+		height: auto;
+		line-height: 1em;
+		margin: -15% 0 0 42%;
+		text-align: left;
+		font-weight: bold;
+		font-size: 42px;
+	}
+	form{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+	}	
+	form #correo{
+		width: 20%;
+		height: 55px;
+		margin: -8% 0 0 42%;
+		font-size: 20px;
+		color: black;
+	}
+	form #boton{
+		width: 13%;
+		height: 55px;
+		margin: -8% 0 0 1%;
+		background: #2bbd3e;
+		color: white;
+		border: none;
+		box-shadow: 5px 5px #16891e;
+		font-size: 20px;
+	}
+	#descripcion{
+		width: 50%;
+		height: auto;
+		margin: -3% 0 0 34%;
+	}
+
+	#descripcion p{
+		width: 70%;
+		height: auto;
+		margin: auto;
+		padding-bottom: 31%;
+		font-size: 22px;
+		color: rgba(0,0,0,0.8);
+		font-weight: 100;
+		line-height: 1.7rem;
+	}
+	#foto img{
+		width: 390px;
+		height: auto;
+		position: absolute;
+		top: 18%;
+		left: 12%;
+	}
+	section #comentarios{
+		width: 70%;
+		height: auto;
+		margin: auto;
+		padding-top: 5%;
+		text-align: center;
+	}	
+
+	section #comentarios h2{
+		font-size: 15px;
+		padding-bottom: 2%
+	}
+	section #comentarios p{
+		width: 80%;
+		height: auto;
+		margin: auto;
+		font-size: 22px;
+		font-weight: 100;
+		font-style: italic;
+		line-height: 2rem;
+		padding-bottom: 2%; 
+		color: #5b5b5b;
+	}
+	section #comentarios p:before{
+		margin-left: 12%;
+		margin-top: 2%;
+	}
+	footer a{
+		position: absolute;
+		top: 35%;
+		left: 45%;
+		right: 0;
+		bottom: 0;
+		cursor: pointer;
+	}
+	footer i{
+		position: absolute;
+		margin: auto;
+		top: 36%;
+		left: 54%;
+	}	
+}
+
+
